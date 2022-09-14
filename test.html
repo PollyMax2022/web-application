@@ -1,0 +1,25 @@
+<html>
+   <head>
+    <meta  charset="UTF-8" http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   </head>
+   
+    <body>
+      <div id="map" style = "width:900px; height:580px;"></div>
+   </body>
+   
+   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+   
+   <script>
+	var mapOptions = {
+	   center: [17.385044, 78.486671],
+	   zoom: 10
+	}
+	var map = new L.map('map', mapOptions);
+	var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+	map.addLayer(layer);
+
+   </script
+
+</html>
